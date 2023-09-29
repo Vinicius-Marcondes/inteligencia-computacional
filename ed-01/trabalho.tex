@@ -1,0 +1,169 @@
+% =======================================================================
+% =                                                                     =
+% = ABNTEX - UTP                                                        =
+% =                                                                     =
+% =======================================================================
+% -----------------------------------------------------------------------
+% Author: Chaua Queirolo
+% Data:   01/07/2017
+% -----------------------------------------------------------------------
+\documentclass[12pt,oneside,a4paper,chapter=TITLE,section=TITLE,sumario
+=tradicional]{abntex2}
+
+% Regras da abnt
+\usepackage{packages/abnt-UTP}
+\usepackage{lipsum}
+
+% =======================================================================
+% =                                                                     =
+% = DADOS DO TRABALHO                                                   =
+% =                                                                     =
+% =======================================================================
+
+% Informações de dados para CAPA e FOLHA DE ROSTO
+\titulo{Como o Estudo de Ondas Gravitacionais Contribui para a Medição da Expansão do Universo}
+
+\autor{Vinícius Marcondes Vieira}
+
+\orientador{Prof. Chauã Queirolo}
+
+\preambulo{Trabalho de Conclusão de Curso apresentado ao curso de Bacharelado 
+em Ciência da Computação da Faculdade de Ciências Exatas e de Tecnologia da 
+Universidade Tuiuti do Paraná, como requisito à obtenção ao grau de Bacharel.}
+
+\instituicao{Universidade Tuiuti do Paraná}
+\local{Curitiba}
+\data{2023}
+
+% =======================================================================
+% =                                                                     =
+% = DOCUMENTO                                                           =
+% =                                                                     =
+% =======================================================================
+\begin{document}
+
+% -----------------------------------------------------------------------
+% -                                                                     -
+% - ELEMENTOS PRÉ-TEXTUAIS                                              -
+% -                                                                     -
+% -----------------------------------------------------------------------
+
+% Capa e folha de rosto
+\imprimircapa
+\imprimirfolhaderosto
+
+% Sumario
+\sumario
+
+% -----------------------------------------------------------------------
+% -                                                                     -
+% - ELEMENTOS TEXTUAIS                                                  -
+% -                                                                     -
+% -----------------------------------------------------------------------
+% Inicia a numeracao das páginas
+\textual
+
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+\chapter{Introdução}
+\label{cap:introducao}
+
+
+O estudo de ondas gravitacionais, previstas pela Teoria da Relatividade Geral de Albert Einstein \cite{bertolami2017}, tem ampliado o escopo da astrofísica e da cosmologia. A detecção dessas ondas, que são perturbações no espaço-tempo geradas por eventos astrofísicos extremos, foi realizada pela primeira vez em 2015 pela colaboração LIGO \cite{bertolami2017, aguiar2018}. Essa conquista abriu novas possibilidades para a observação do universo, complementando métodos tradicionais baseados em radiação eletromagnética.
+
+Um dos campos que mais se beneficiou desse avanço é a cosmologia, especialmente na medição da taxa de expansão do universo, descrita pela constante de Hubble. Métodos convencionais para a medição dessa constante, como o estudo de supernovas Tipo Ia e o mapeamento do fundo cósmico de micro-ondas, apresentam limitações \cite{silva2021}. Ondas gravitacionais oferecem uma alternativa, permitindo a medição direta do \emph{redshift} e, consequentemente, uma estimativa mais precisa da constante de Hubble \cite{silva2021}.
+
+Este artigo tem como objetivo explorar a contribuição das ondas gravitacionais na medição da expansão do universo. Serão abordados os princípios fundamentais das ondas gravitacionais, os métodos de detecção e como essas detecções podem ser aplicadas para estimar parâmetros cosmológicos \cite{ramos2019, silva2021}. A análise se baseia em uma revisão da literatura atual e nos mais recentes desenvolvimentos na área.
+
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+\chapter{Fundamentação Teórica}
+\label{cap:fundamentacao-teorica}
+
+Esta seção abordará os conceitos teóricos que fundamentam o estudo de ondas gravitacionais e sua aplicação na medição da expansão do universo. Serão discutidas as bases da Teoria da Relatividade Geral, a natureza e detecção de ondas gravitacionais, bem como os métodos atuais para estimar a constante de Hubble. O objetivo é fornecer o contexto teórico necessário para compreender as implicações práticas e cosmológicas desses fenômenos.
+
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+\chapter{Revisão da Literatura}
+\label{cap:revisao-literatura}
+
+Esta seção apresenta uma revisão de estudos e pesquisas anteriores que exploram o papel das ondas gravitacionais na astrofísica e na cosmologia. O foco será em trabalhos que abordam a medição da constante de Hubble e outros parâmetros cosmológicos através do uso de ondas gravitacionais, fornecendo um panorama do estado atual do campo e identificando lacunas que o presente estudo busca preencher.
+
+A tabela \ref{table:related_work} lista os principais trabalhos estudados para a realização do presente artigo.
+
+\begin{table}[h]
+\centering
+\caption{Trabalhos Relacionados}
+\label{table:related_work}
+\begin{tabular}{|c|c|c|}
+\hline
+Autor(es) & Ano & Foco do Estudo \\
+\hline
+Bertolami \& Gomes & 2017 & Fundamentos de Ondas Gravitacionais \\
+\hline
+Aguiar & 2018 & Detecção e Fontes de Ondas Gravitacionais \\
+\hline
+Ramos \& Maluf & 2019 & Radiação Emitida por Pulsares Binários \\
+\hline
+Silva & 2021 & Aplicações em Cosmologia \\
+\hline
+\end{tabular}
+\fonte{O próprio autor, 2023}
+\end{table}
+
+
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+\chapter{Metodologia}
+\label{cap:metodologia}
+
+Esta seção descreve a metodologia adotada para a realização deste estudo, que se baseia em uma pesquisa bibliográfica abrangente. Foram selecionados artigos científicos, relatórios e outros documentos acadêmicos que abordam o papel das ondas gravitacionais na astrofísica e na cosmologia, com ênfase na medição da constante de Hubble. O objetivo é sintetizar os métodos e descobertas mais relevantes da literatura para fornecer uma visão consolidada do estado atual do campo.
+
+A \autoref{fig:interferometro} ilustra um Interferômetro de Michelson, instrumento fundamental na detecção de ondas gravitacionais. Este dispositivo é empregado para quantificar minúsculas flutuações no espaço-tempo.
+\begin{figure}[h]
+    \legenda[fig:interferometro]{Interferómetro de Michelso}
+    \fig{scale=0.6}{imagens/deteccao_de_ondas_gravitacionais.png}
+    \fonte{\cite{bertolami2017}}
+\end{figure}
+
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+\chapter{Resultados Experimentais}
+\label{cap:resultados}
+
+Esta seção apresenta os resultados obtidos a partir da pesquisa bibliográfica realizada, focando em como as ondas gravitacionais têm sido utilizadas para medir a expansão do universo. Serão discutidas as principais descobertas, métodos e implicações desses estudos, permitindo uma avaliação crítica da eficácia e precisão das técnicas baseadas em ondas gravitacionais para estimar parâmetros cosmológicos como a constante de Hubble.
+
+A tabela \ref{table:results} resume os principais resultados obtidos a partir da pesquisa bibliográfica realizada.
+
+\begin{table}[h]
+\centering
+\caption{Resultados Baseados nos Artigos Lidos}
+\label{table:results}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+Autor(es) & Resultado Principal & Implicações \\
+\hline
+Bertolami \& Gomes & Detecção direta de ondas gravitacionais & Novas possibilidades em astrofísica \\
+\hline
+Aguiar & Discussão sobre métodos de detecção & Avanços na precisão da detecção \\
+\hline
+Ramos \& Maluf & Teoria aplicada a pulsares binários & Compreensão da radiação gravitacional \\
+\hline
+Silva & Método para medir a constante de Hubble & Precisão na medição da expansão do universo \\
+\hline
+\end{tabularx}
+\fonte{O próprio autor, 2023}
+\end{table}
+
+
+
+
+\chapter{Conclusão}
+
+\bibliography{referencias}
+\nocite{smith2022}
+\nocite{johnson2021}
+\nocite{brown2020}
+
+
+\end{document}
